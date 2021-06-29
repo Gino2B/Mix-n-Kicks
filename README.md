@@ -73,8 +73,8 @@ A social media site where you grab data to render posts. You can also give data 
 
 | Day     | Deliverable                                        | Status     |
 | ------- | -------------------------------------------------- | ---------- |
-| June 28 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| June 29 | Project Approval                                   | Incomplete |
+| June 28 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| June 29 | Project Approval                                   | Complete   |
 | June 30 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
 | June 30 | Pseudocode / actual code                           | Incomplete |
 | July 1  | Initial Clickable Model                            | Incomplete |
