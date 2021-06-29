@@ -1,12 +1,25 @@
+<!-- CODENAME: BANANA -->
+
 # Project Overview
+
+A social media site about shoes
 
 ## Project Name
 
+Mix'n Kicks
+
 ## Project Description
+
+A social media site where you grab data to render posts. You can also give data to upload a post. Users can then check the post for more information and like and comment. Kind of similar to instagram.
 
 ## Wireframes
 
+[Wireframe 1](https://imgur.com/QUkgpRP)
+[Wireframe 2](https://imgur.com/J9YzP2V)
+
 ## Component Hierarchy
+
+[Component Heirarchy](https://i.imgur.com/xY6LztG.png)
 
 ## API and Data Sample
 
@@ -14,34 +27,30 @@
 {
   "records": [
     {
-      "id": "recONRzIUTuZ5lXaF",
+      "id": "recEpFbDNHyQov71M",
       "fields": {
-        "author": "Liz Yrineo",
-        "setup": "Why did the tomato turn red?",
-        "punchline": "Because it saw the salad dressing!"
+        "name": "Gene",
+        "brand": "Jordan",
+        "colorway": "Bred 11's",
+        "size": 10,
+        "image": "https://images.stockx.com/images/Air-Jordan-11-Retro-Playoffs-2019-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=col...",
+        "description": "This Jordan 11 features a black upper with shiny patent leather overlays and red detailing."
       },
-      "createdTime": "2020-11-30T16:03:09.000Z"
+      "createdTime": "2021-06-29T01:57:37.000Z"
     },
     {
-      "id": "rec3oYZ5Tp0AIDsKe",
+      "id": "recNtN7HhEyi9j95e",
       "fields": {
-        "author": "Rachel Moskowitz",
-        "setup": "What did the green grape say to the red grape?",
-        "punchline": "Breathe, idiot, breathe!"
+        "name": "Kelvin",
+        "brand": "Jordan",
+        "colorway": "Infrared 6's",
+        "size": 8,
+        "image": "https://sneakernews.com/wp-content/uploads/2014/11/jordan-6-infrared-history-6.jpg",
+        "description": "The Air Jordan 6 Retro 'Infrared' 2019 is a 2019 re-release of the OG colorway. The shoe's black nubuck upper includes a reflective 3M layer, with per..."
       },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "recA34tOaoE1IVeC1",
-      "fields": {
-        "author": "Gary Grant",
-        "setup": "How do you make holy water?",
-        "punchline": "You boil the hell out of it!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
+      "createdTime": "2021-06-29T01:57:37.000Z"
     }
-  ],
-  "offset": "recA34tOaoE1IVeC1"
+  ]
 }
 ```
 
@@ -49,24 +58,40 @@
 
 #### MVP
 
+- Get the axios calls for getting
+- Render all shoe posts
+- Complete the form components to post data to API
+- Finish all components
+- Styling
+
 #### PostMVP
+
+- Render a heart if press the like button
+- Delete comments/posts
 
 ## Project Schedule
 
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 10-12 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 13    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| July 14    | Pseudocode / actual code                           | Incomplete |
-| July 15    | Initial Clickable Model                            | Incomplete |
-| July 16    | MVP                                                | Incomplete |
-| July 17    | Presentations                                      | Incomplete |
+| Day     | Deliverable                                        | Status     |
+| ------- | -------------------------------------------------- | ---------- |
+| June 28 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| June 29 | Project Approval                                   | Incomplete |
+| June 30 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
+| June 30 | Pseudocode / actual code                           | Incomplete |
+| July 1  | Initial Clickable Model                            | Incomplete |
+| July 2  | MVP                                                | Incomplete |
+| July 7  | Presentations                                      | Incomplete |
 
 ## Timeframes
 
 | Component        | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Adding Form      |    H     |      1hrs      |  :---------:  | :---------: |
+| Working with API |    H     |      3hrs      |  :---------:  | :---------: |
+| Pseudocode       |    H     |      1hrs      |  :---------:  | :---------: |
+| Render Results   |    H     |      3hrs      |  :---------:  | :---------: |
+| CSS for home     |    H     |      2hrs      |  :---------:  | :---------: |
+| Style components |    H     |      2hrs      |  :---------:  | :---------: |
+| Media Query's    |    H     |      2hrs      |  :---------:  | :---------: |
+| Research         |    H     |      3hrs      |  :---------:  | :---------: |
+| Debugging        |    H     |      3hrs      |  :---------:  | :---------: |
+| Total            |    H     |     20hrs      |  :---------:  | :---------: |
