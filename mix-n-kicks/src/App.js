@@ -32,7 +32,7 @@ function App() {
         </main>
       </Route>
       <Route path="/new">
-        <Post />
+        <Post setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/comment/">
         <h2>Create comment</h2>

@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
+import { baseURL, config } from "../services";
 
 function Post(props) {
   const [name, setName] = useState("");
@@ -8,9 +10,27 @@ function Post(props) {
   const [colorway, setColorway] = useState("");
   const [size, setSize] = useState(0);
   const [description, setDescription] = useState("");
+  const history = useHistory();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const newShoe = {
+      name,
+      image,
+      brand,
+      colorway,
+      size,
+      description,
+    };
+    await axios.post(baseURL, { fields: newShoe }, config);
+    props.setToggleFetch((toggleFetch) => !toggleFetch);
+    setTimeout(() => {
+      history.push("/");
+    }, 1000);
+  };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         value={name}
@@ -46,6 +66,7 @@ function Post(props) {
         onChange={(e) => setDescription(e.target.value)}
         placeholder="comments"
       ></textarea>
+      <button type="submit">Post</button>
     </form>
   );
 }
