@@ -36,35 +36,41 @@ function Post(props) {
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Name"
+        required
       />
       <input
         type="text"
         value={image}
         onChange={(e) => setImage(e.target.value)}
         placeholder="Image URL"
+        required
       />
       <input
         type="text"
         value={brand}
         onChange={(e) => setBrand(e.target.value)}
         placeholder="Shoe Brand"
+        required
       />
       <input
         type="text"
         value={colorway}
         onChange={(e) => setColorway(e.target.value)}
         placeholder="Colorway"
+        required
       />
       <input
         type="number"
         value={size}
         onChange={(e) => setSize(e.target.valueAsNumber)}
         placeholder="Size"
+        required
       />
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         placeholder="comments"
+        required
       />
       <button type="submit">Post</button>
     </form>
