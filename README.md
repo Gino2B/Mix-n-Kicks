@@ -83,15 +83,15 @@ A social media site where you grab data to render posts. You can also give data 
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      1hrs      |  :---------:  | :---------: |
-| Working with API |    H     |      3hrs      |  :---------:  | :---------: |
-| Pseudocode       |    H     |      1hrs      |  :---------:  | :---------: |
-| Render Results   |    H     |      3hrs      |  :---------:  | :---------: |
-| CSS for home     |    H     |      2hrs      |  :---------:  | :---------: |
-| Style components |    H     |      2hrs      |  :---------:  | :---------: |
-| Media Query's    |    H     |      2hrs      |  :---------:  | :---------: |
-| Research         |    H     |      3hrs      |  :---------:  | :---------: |
-| Debugging        |    H     |      3hrs      |  :---------:  | :---------: |
-| Total            |    H     |     20hrs      |  :---------:  | :---------: |
+| Component        | Priority | Estimated Time | Time Invested |
+| ---------------- | :------: | :------------: | :-----------: |
+| Adding Form      |    H     |      1hrs      |     2hrs      |
+| Working with API |    H     |      3hrs      |  :---------:  |
+| Pseudocode       |    H     |      1hrs      |  :---------:  |
+| Render Results   |    H     |      3hrs      |  :---------:  |
+| CSS for home     |    H     |      2hrs      |  :---------:  |
+| Style components |    H     |      2hrs      |  :---------:  |
+| Media Query's    |    H     |      2hrs      |  :---------:  |
+| Research         |    H     |      3hrs      |  :---------:  |
+| Debugging        |    H     |      3hrs      |  :---------:  |
+| Total            |    H     |     20hrs      |  :---------:  |
