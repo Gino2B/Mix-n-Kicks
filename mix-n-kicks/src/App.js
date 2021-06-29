@@ -5,6 +5,7 @@ import { baseURL, config } from "./services";
 import Navbar from "./components/Navbar";
 import Shoes from "./components/Shoes";
 import Post from "./components/Post";
+import Comment from "./components/Comment";
 import "./App.css";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         <Post setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/comment/">
-        <h2>Create comment</h2>
+        <Comment setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/posts/:id">
         <h2>View Post/Comments</h2>
