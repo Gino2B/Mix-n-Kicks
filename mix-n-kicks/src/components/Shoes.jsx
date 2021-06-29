@@ -2,7 +2,7 @@
 
 function Shoes(props) {
   return (
-    <article>
+    <article class="shoes">
       <img
         src={`${props.shoe.fields.image}`}
         alt={`${props.shoe.fields.colorway}`}

@@ -25,29 +25,31 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Route exact path="/">
-        <h2>Home</h2>
-        <main>
-          {shoes.map((shoe) => (
-            <Link to={`/posts/${shoe.id}`}>
-              <Shoes
-                key={shoe.id}
-                shoe={shoe}
-                setToggleFetch={setToggleFetch}
-              />
-            </Link>
-          ))}
-        </main>
-      </Route>
-      <Route path="/new">
-        <Post setToggleFetch={setToggleFetch} />
-      </Route>
-      <Route path="/comment/">
-        <Comment setToggleFetch={setToggleFetch} />
-      </Route>
-      <Route path="/posts/:id">
-        <Card shoes={shoes} />
-      </Route>
+      <main>
+        <Route exact path="/">
+          <h2>Home</h2>
+          <div id="posts-container">
+            {shoes.map((shoe) => (
+              <Link to={`/posts/${shoe.id}`}>
+                <Shoes
+                  key={shoe.id}
+                  shoe={shoe}
+                  setToggleFetch={setToggleFetch}
+                />
+              </Link>
+            ))}
+          </div>
+        </Route>
+        <Route path="/new">
+          <Post setToggleFetch={setToggleFetch} />
+        </Route>
+        <Route path="/comment/">
+          <Comment setToggleFetch={setToggleFetch} />
+        </Route>
+        <Route path="/posts/:id">
+          <Card shoes={shoes} />
+        </Route>
+      </main>
     </div>
   );
 }
