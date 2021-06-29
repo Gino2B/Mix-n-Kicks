@@ -9,7 +9,6 @@ function Navbar() {
 
       {/* placeholders  */}
       <Link to="/comment">Create A Comment</Link>
-      <Link to="/posts/1">A post</Link>
     </nav>
   );
 }

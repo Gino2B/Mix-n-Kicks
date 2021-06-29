@@ -7,6 +7,7 @@ function Card(props) {
   console.log(shoeCard);
   return (
     <article>
+      <h2>{`${shoeCard.fields.name}'s Post`}</h2>
       <img
         src={`${shoeCard.fields.image}`}
         alt={`${shoeCard.fields.colorway}`}
