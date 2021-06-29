@@ -16,6 +16,8 @@ function Comment(props) {
       rating,
       comments,
     };
+
+    //MOST LIKELY WILL HAVE TO CHANGE THE URL POSTING TO
     await axios.post(baseURL, { fields: newComment }, config);
     props.setToggleFetch((toggleFetch) => !toggleFetch);
     setTimeout(() => {
