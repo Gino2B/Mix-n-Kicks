@@ -47,6 +47,7 @@ function Comment(props) {
         onChange={(e) => setComments(e.target.value)}
         required
       />
+      <button type="submit">Post Comment</button>
     </form>
   );
 }
