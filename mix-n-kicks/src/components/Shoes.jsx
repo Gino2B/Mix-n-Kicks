@@ -7,9 +7,11 @@ function Shoes(props) {
         src={`${props.shoe.fields.image}`}
         alt={`${props.shoe.fields.colorway}`}
       />
-      <h2>
-        {props.shoe.fields.brand} {props.shoe.fields.colorway}
-      </h2>
+      <div class="shoe-name">
+        <h2>
+          {props.shoe.fields.brand} {props.shoe.fields.colorway}
+        </h2>
+      </div>
     </article>
   );
 }
