@@ -1,8 +1,11 @@
+import Rating from "./Rating";
+
 const Comment = (props) => {
   const { name, content, rating } = props.comment.fields;
   return (
     <section>
-      {content} - {name} - {rating}
+      {content} - {name} -
+      <Rating rating={rating} />
     </section>
   );
 };
