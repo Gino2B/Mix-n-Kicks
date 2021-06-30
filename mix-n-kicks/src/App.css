@@ -43,6 +43,10 @@ main {
   flex-wrap: wrap;
   width: 100vw;
 }
+#posts-container a:link,
+a:visited {
+  text-decoration: none;
+}
 .shoes {
   display: inline-flex;
   flex-direction: column;
@@ -70,7 +74,6 @@ main {
   font-size: 20px;
   color: black;
 }
-
 /******************************/
 /* css for creating post form */
 /******************************/
