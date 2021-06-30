@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Navbar from "./components/Navbar";
 import Shoes from "./components/Shoes";
@@ -34,7 +34,12 @@ function App() {
           },
         };
       });
-      console.log(linkedPosts);
+      console.log("L", linkedPosts);
+      linkedPosts.sort((a, b) => {
+        const bDate = new Date(b.createdTime);
+        const aDate = new Date(a.createdTime);
+        return aDate - bDate;
+      });
       setShoes(linkedPosts);
     };
     fetchShoes();
@@ -48,13 +53,11 @@ function App() {
           <h2>Home</h2>
           <div id="posts-container">
             {shoes.map((shoe) => (
-              <Link to={`/posts/${shoe.id}`}>
-                <Shoes
-                  key={shoe.id}
-                  shoe={shoe}
-                  setToggleFetch={setToggleFetch}
-                />
-              </Link>
+              <Shoes
+                key={shoe.id}
+                shoe={shoe}
+                setToggleFetch={setToggleFetch}
+              />
             ))}
           </div>
         </Route>
