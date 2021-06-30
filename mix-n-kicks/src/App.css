@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+/***************************/
+/* css for home page posts */
+/***************************/
 #posts-container {
   display: flex;
   justify-content: space-around;
@@ -32,7 +35,12 @@
 }
 .shoe-name h2 {
   font-size: 20px;
+  color: black;
 }
+
+/******************************/
+/* css for creating post form */
+/******************************/
 #post-form {
   display: flex;
   flex-direction: column;
@@ -61,5 +69,45 @@
 }
 
 #post-form button {
+  margin: 3vh;
+}
+
+/*********************************/
+/* css for creating comment form */
+/*********************************/
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh auto;
+  width: 50vw;
+  border: 2px solid black;
+}
+
+#comment-form input {
+  text-align: center;
+  font-size: 16px;
+  width: 15vw;
+  margin: 3vh;
+  padding: 1vw;
+}
+
+#comment-form h4,
+h5 {
+  margin: 1.5vh;
+}
+
+#comment-form textarea {
+  text-align: center;
+  width: 25vw;
+  height: 15vh;
+  font-size: 16px;
+  margin: 3vh;
+  padding: 1vw;
+}
+
+#comment-form button {
   margin: 3vh;
 }

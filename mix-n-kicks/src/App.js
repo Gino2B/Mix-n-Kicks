@@ -42,9 +42,11 @@ function App() {
           </div>
         </Route>
         <Route path="/new">
+          <h2>Create A Post</h2>
           <Post setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/comment/">
+          <h2>Post A Comment</h2>
           <Comment setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/posts/:id">

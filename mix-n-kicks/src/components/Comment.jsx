@@ -5,7 +5,7 @@ import { baseURL, config } from "../services";
 
 function Comment(props) {
   const [name, setName] = useState("");
-  const [rating, setRating] = useState(0);
+  const [rating, setRating] = useState(3);
   const [comments, setComments] = useState("");
   const history = useHistory();
 
@@ -26,14 +26,16 @@ function Comment(props) {
   };
 
   return (
-    <form>
+    <form id="comment-form">
       <input
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        placeholder="Name"
         required
       />
-      <h4>Rating</h4>
+      <h4>🔥 Heat Rating 🔥</h4>
+      <h5>{rating}</h5>
       <input
         type="range"
         value={rating}
@@ -45,6 +47,7 @@ function Comment(props) {
       <textarea
         value={comments}
         onChange={(e) => setComments(e.target.value)}
+        placeholder="Comments"
         required
       />
       <button type="submit">Post Comment</button>
