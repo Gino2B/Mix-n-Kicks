@@ -1,8 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <h5>&#169;</h5>
-      <i class="fa fa-github"></i>
+      <h5> Copyright &#169; 2021</h5>
     </footer>
   );
 }

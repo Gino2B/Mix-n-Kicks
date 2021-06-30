@@ -7,6 +7,7 @@ import Shoes from "./components/Shoes";
 import Post from "./components/Post";
 import Comment from "./components/Comment";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Card shoes={shoes} />
         </Route>
       </main>
+      <Footer />
     </div>
   );
 }
