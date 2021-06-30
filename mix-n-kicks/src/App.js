@@ -67,7 +67,7 @@ function App() {
           <CommentForm setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/posts/:id">
-          <Post shoes={shoes} />
+          <Post shoes={shoes} setToggleFetch={setToggleFetch} />
         </Route>
       </main>
       <Footer />

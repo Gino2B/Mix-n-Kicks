@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import Comment from "./Comment";
+import CommentForm from "./CommentForm";
 
 function Card(props) {
   const params = useParams();
@@ -18,7 +19,8 @@ function Card(props) {
       <h3>{shoeCard.fields.colorway}</h3>
       <h3>{shoeCard.fields.size}</h3>
       <h3>{shoeCard.fields.description}</h3>
-      <div>
+      <CommentForm setToggleFetch={props.setToggleFetch} shoe={shoeCard} />
+      <div id="comment-section">
         {shoeCard.fields.comments.map((comment) => (
           <Comment key={comment.id} comment={comment} />
         ))}
