@@ -29,8 +29,7 @@ function Comment(props) {
         placeholder="Name"
         required
       />
-      <h4>🔥 Heat Rating 🔥</h4>
-      <h5>{rating}</h5>
+      <h4>🔥 Heat Rating : {rating} 🔥</h4>
       <input
         type="range"
         value={rating}
@@ -43,6 +42,7 @@ function Comment(props) {
         value={content}
         onChange={(e) => setContent(e.target.value)}
         placeholder="Comments"
+        maxLength={200}
         required
       />
       <button type="submit">Post Comment</button>

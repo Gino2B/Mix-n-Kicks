@@ -1,9 +1,9 @@
 const Comment = (props) => {
   const { name, content, rating } = props.comment.fields;
   return (
-    <li>
+    <section>
       {content} - {name} - {rating}
-    </li>
+    </section>
   );
 };
 
