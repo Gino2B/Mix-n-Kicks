@@ -22,7 +22,7 @@ function Post(props) {
       size,
       description,
     };
-    await axios.post(baseURL, { fields: newShoe }, config);
+    await axios.post(`${baseURL}/shoes`, { fields: newShoe }, config);
     props.setToggleFetch((toggleFetch) => !toggleFetch);
     setTimeout(() => {
       history.push("/");

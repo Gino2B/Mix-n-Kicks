@@ -2,7 +2,7 @@
 
 function Shoes(props) {
   return (
-    <article class="shoes">
+    <section class="shoes">
       <img
         src={`${props.shoe.fields.image}`}
         alt={`${props.shoe.fields.colorway}`}
@@ -12,7 +12,7 @@ function Shoes(props) {
           {props.shoe.fields.brand} {props.shoe.fields.colorway}
         </h2>
       </div>
-    </article>
+    </section>
   );
 }
 

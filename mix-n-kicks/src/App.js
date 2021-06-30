@@ -4,8 +4,8 @@ import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Navbar from "./components/Navbar";
 import Shoes from "./components/Shoes";
-import Post from "./components/Post";
-import Comment from "./components/Comment";
+import Post from "./components/PostForm";
+import CommentForm from "./components/CommentForm";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import "./App.css";
@@ -16,9 +16,27 @@ function App() {
 
   useEffect(() => {
     const fetchShoes = async () => {
-      const resp = await axios.get(baseURL, config);
-      console.log(resp.data.records);
-      setShoes(resp.data.records);
+      const shoeResp = await axios.get(`${baseURL}/shoes`, config);
+      const commentsResp = await axios.get(`${baseURL}/comments`, config);
+
+      const comments = commentsResp.data.records;
+
+      const linkedPosts = shoeResp.data.records.map((shoe) => {
+        return {
+          ...shoe,
+          fields: {
+            ...shoe.fields,
+            comments: shoe.fields.comments
+              ? comments.filter((comment) =>
+                  shoe.fields.comments.includes(comment.id)
+                )
+              : [],
+          },
+        };
+      });
+
+      console.log(shoeResp.data.records);
+      setShoes(linkedPosts);
     };
     fetchShoes();
   }, [toggleFetch]);
@@ -47,7 +65,7 @@ function App() {
         </Route>
         <Route path="/comment/">
           <h2>Post A Comment</h2>
-          <Comment setToggleFetch={setToggleFetch} />
+          <CommentForm setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/posts/:id">
           <Card shoes={shoes} />
