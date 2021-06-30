@@ -4,9 +4,9 @@ import { Link, Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import Navbar from "./components/Navbar";
 import Shoes from "./components/Shoes";
-import Post from "./components/PostForm";
+import PostForm from "./components/PostForm";
 import CommentForm from "./components/CommentForm";
-import Card from "./components/Card";
+import Post from "./components/Post";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -34,8 +34,7 @@ function App() {
           },
         };
       });
-
-      console.log(shoeResp.data.records);
+      console.log(linkedPosts);
       setShoes(linkedPosts);
     };
     fetchShoes();
@@ -61,14 +60,14 @@ function App() {
         </Route>
         <Route path="/new">
           <h2>Create A Post</h2>
-          <Post setToggleFetch={setToggleFetch} />
+          <PostForm setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/comment/">
           <h2>Post A Comment</h2>
           <CommentForm setToggleFetch={setToggleFetch} />
         </Route>
         <Route path="/posts/:id">
-          <Card shoes={shoes} />
+          <Post shoes={shoes} />
         </Route>
       </main>
       <Footer />

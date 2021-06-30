@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Comment from "./Comment";
 
 function Card(props) {
   const params = useParams();
@@ -6,7 +7,7 @@ function Card(props) {
   const shoeCard = props.shoes.find((shoe) => shoe.id === params.id);
   console.log(shoeCard);
   return (
-    <article>
+    <section>
       <h2>{`${shoeCard.fields.name}'s Post`}</h2>
       <img
         src={`${shoeCard.fields.image}`}
@@ -17,7 +18,12 @@ function Card(props) {
       <h3>{shoeCard.fields.colorway}</h3>
       <h3>{shoeCard.fields.size}</h3>
       <h3>{shoeCard.fields.description}</h3>
-    </article>
+      <div>
+        {shoeCard.fields.comments.map((comment) => (
+          <Comment key={comment.id} comment={comment} />
+        ))}
+      </div>
+    </section>
   );
 }
 

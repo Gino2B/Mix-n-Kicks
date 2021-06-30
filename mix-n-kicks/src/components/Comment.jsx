@@ -1,8 +1,8 @@
 const Comment = (props) => {
-  const { author, content } = props.comment.fields;
+  const { name, content } = props.comment.fields;
   return (
     <li>
-      {content} - {author}
+      {content} - {name}
     </li>
   );
 };
