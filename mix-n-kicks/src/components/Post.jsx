@@ -17,6 +17,7 @@ function Card(props) {
         />
         <div id="postcard-info">
           <h3>{shoeCard.fields.name}</h3>
+          <hr />
           <h4>{shoeCard.fields.brand}</h4>
           <h4>{shoeCard.fields.colorway}</h4>
           <h4>{shoeCard.fields.size}</h4>
