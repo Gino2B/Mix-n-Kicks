@@ -4,15 +4,21 @@
 /***************************/
 /* css for the navbar      */
 /***************************/
+header {
+  display: flex;
+  background: linear-gradient(to left, #2c3e50, #3498db);
+  border: 2px solid black;
+  width: 100vw;
+}
 nav {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
   height: 8vh;
-  background: linear-gradient(to left, #2c3e50, #3498db);
+  width: 100vw;
   border: 2px solid black;
+  background: linear-gradient(to left, #2c3e50, #3498db);
   position: fixed;
   top: 0;
   left: 0;
@@ -36,7 +42,11 @@ nav h2,
 nav h3 {
   color: white;
 }
-
+.fa-hamburger {
+  display: none;
+  text-align: right;
+  padding: 4px;
+}
 main {
   padding-top: 10vh;
 }
@@ -290,5 +300,98 @@ footer h5 {
     height: 32vh;
     max-height: 32vh;
     font-size: 0.9em;
+  }
+  @media only screen and (max-width: 540px) {
+    header {
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 100vw;
+      border: 1px solid transparent;
+    }
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      height: 15vh;
+      position: relative;
+    }
+    #left {
+      margin: 1px;
+      padding: 0;
+    }
+    #right {
+      flex-direction: column;
+      margin: 1px;
+      padding: 0;
+      width: 100vw;
+    }
+    nav h2 {
+      margin: 2px;
+      padding: 0;
+      font-size: 1.2em;
+      /* font-size: */
+    }
+
+    nav h3 {
+      margin: 2px;
+      padding: 0;
+      font-size: 1em;
+    }
+    .fa-hamburger {
+      display: block;
+    }
+    main {
+      padding-top: 0vh;
+    }
+    /***************************/
+    /* css for home page posts */
+    /***************************/
+    .shoe-name {
+      font-size: 0.8em;
+    }
+
+    /*********************************/
+    /* css for creating comment form */
+    /*********************************/
+    #comment-form {
+      width: 65vw;
+    }
+    #comment-form input {
+      width: 25vw;
+      font-size: 0.9em;
+    }
+    #comment-form textarea {
+      width: 35vw;
+      height: 12vh;
+      font-size: 0.9em;
+    }
+    /*********************************/
+    /* css for creating  postcard    */
+    /*********************************/
+    #postcard {
+      display: flex;
+      flex-direction: column;
+    }
+    #postcard img {
+      max-width: 65vw;
+      height: 35vh;
+      border: 2px solid black;
+      border-radius: 6px;
+    }
+    #postcard-info {
+      width: 65vw;
+      max-width: 65vw;
+      height: 35vh;
+      max-height: 35vh;
+      font-size: 0.7em;
+    }
+    /*********************************/
+    /* css for creating  postcard    */
+    /*********************************/
+    #comments-container {
+      background: linear-gradient(to bottom, #8e9eab, #eef2f3);
+      width: 60vw;
+      margin: 2vh auto;
+      border: 2px solid black;
+    }
   }
 }
