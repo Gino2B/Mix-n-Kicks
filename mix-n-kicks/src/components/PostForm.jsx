@@ -57,6 +57,7 @@ function Post(props) {
         value={colorway}
         onChange={(e) => setColorway(e.target.value)}
         placeholder="Colorway"
+        maxLength={50}
         required
       />
       <input
