@@ -70,6 +70,7 @@ function Post(props) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         placeholder="comments"
+        maxLength={150}
         required
       />
       <button type="submit">Post</button>

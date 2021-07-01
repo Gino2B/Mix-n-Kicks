@@ -6,7 +6,6 @@ function Card(props) {
   const params = useParams();
 
   const shoeCard = props.shoes.find((shoe) => shoe.id === params.id);
-  console.log(shoeCard);
   return (
     <section id="postcard-container">
       <h2>{`${shoeCard.fields.name}'s Post`}</h2>
@@ -16,11 +15,11 @@ function Card(props) {
           alt={`${shoeCard.fields.colorway}`}
         />
         <div id="postcard-info">
-          <h3>{shoeCard.fields.name}</h3>
+          <h3>Username: {shoeCard.fields.name}</h3>
           <hr />
-          <h4>{shoeCard.fields.brand}</h4>
-          <h4>{shoeCard.fields.colorway}</h4>
-          <h4>{shoeCard.fields.size}</h4>
+          <h4>Brand: {shoeCard.fields.brand}</h4>
+          <h4>Version: {shoeCard.fields.colorway}</h4>
+          <h4>Size: {shoeCard.fields.size}</h4>
           <h4>{shoeCard.fields.description}</h4>
         </div>
       </div>

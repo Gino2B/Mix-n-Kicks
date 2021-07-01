@@ -4,9 +4,9 @@ const Comment = (props) => {
   const { name, content, rating } = props.comment.fields;
   return (
     <section id="comments-container">
-      <h3>{name}</h3>
+      <h3>Username: {name}</h3>
       <hr />
-      <h3>{content}</h3>
+      <h5>{content}</h5>
       <Rating rating={rating} />
     </section>
   );
