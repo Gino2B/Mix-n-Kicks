@@ -30,7 +30,7 @@ function Post(props) {
   };
 
   return (
-    <form id="post-form" onSubmit={handleSubmit}>
+    <form id="post-form" onSubmit={(e) => handleSubmit(e)}>
       <input
         type="text"
         value={name}

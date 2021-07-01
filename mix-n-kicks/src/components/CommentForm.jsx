@@ -21,7 +21,7 @@ function Comment(props) {
   };
 
   return (
-    <form id="comment-form" onSubmit={handleSubmit}>
+    <form id="comment-form" onSubmit={(e) => handleSubmit(e)}>
       <input
         type="text"
         value={name}
