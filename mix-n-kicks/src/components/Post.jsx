@@ -9,7 +9,7 @@ function Card(props) {
   return (
     <section id="postcard-container">
       {shoeCard ? (
-        <div>
+        <>
           <h2>{`${shoeCard.fields.name}'s Post`}</h2>
           <div id="postcard">
             <img
@@ -33,7 +33,7 @@ function Card(props) {
               <Comment key={comment.id} comment={comment} />
             ))}
           </div>
-        </div>
+        </>
       ) : (
         <h4> Loading ... </h4>
       )}
