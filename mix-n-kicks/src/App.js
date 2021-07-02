@@ -72,6 +72,16 @@ function App() {
         <Route path="/posts/:id">
           <Post shoes={shoes} setToggleFetch={setToggleFetch} />
         </Route>
+        <Route path="/about">
+          <div id="about">
+            <a href="https://github.com/Gino2B">
+              <h3>Github</h3>
+            </a>
+            <a href="https://www.linkedin.com/in/gene-baybay-80490520b/">
+              <h3>Linked In</h3>
+            </a>
+          </div>
+        </Route>
       </main>
       <Footer />
     </div>

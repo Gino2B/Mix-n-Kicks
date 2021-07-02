@@ -212,7 +212,24 @@ h5 {
   margin: 2vh auto;
   border: 2px solid black;
 }
-
+/*********************************/
+/* css for creating  about me    */
+/*********************************/
+#about {
+  margin: auto;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 60vh;
+  border: 2px solid black;
+  background: linear-gradient(to bottom, #83a4d4, #b6fbff);
+}
+#about h3 {
+  color: white;
+}
 /*********************************/
 /*        css for footer         */
 /*********************************/
@@ -301,6 +318,7 @@ footer h5 {
     max-height: 32vh;
     font-size: 0.9em;
   }
+
   @media only screen and (max-width: 540px) {
     header {
       flex-direction: column;
