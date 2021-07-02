@@ -34,7 +34,6 @@ function App() {
           },
         };
       });
-      console.log("L", linkedPosts);
       linkedPosts.sort((a, b) => {
         const bDate = new Date(b.createdTime);
         const aDate = new Date(a.createdTime);
