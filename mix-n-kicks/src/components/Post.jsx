@@ -52,7 +52,11 @@ function Card(props) {
           <h3>Comments</h3>
           <div id="comment-section">
             {shoeCard.fields.comments.map((comment) => (
-              <Comment key={comment.id} comment={comment} />
+              <Comment
+                key={comment.id}
+                comment={comment}
+                setToggleFetch={props.setToggleFetch}
+              />
             ))}
           </div>
         </>
