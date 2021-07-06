@@ -8,7 +8,7 @@ function Post(props) {
   const [image, setImage] = useState("");
   const [brand, setBrand] = useState("");
   const [colorway, setColorway] = useState("");
-  const [size, setSize] = useState(0);
+  const [size, setSize] = useState("");
   const [description, setDescription] = useState("");
   const history = useHistory();
 
