@@ -177,10 +177,20 @@ h5 {
 }
 
 #postcard {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+#likes-container {
+  width: 99vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
+#likes-container button {
+  margin: 1vw;
 }
 #postcard img {
   max-width: 350px;

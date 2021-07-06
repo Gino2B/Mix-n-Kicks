@@ -29,8 +29,10 @@ function Card(props) {
       {shoeCard ? (
         <>
           <h2>{`${shoeCard.fields.name}'s Post`}</h2>
-          <button onClick={(e) => pressLike(e)}>Like</button>
-          <h3>{likes}</h3>
+          <div id="likes-container">
+            <button onClick={(e) => pressLike(e)}>👍</button>
+            <h3>{likes}</h3>
+          </div>
           <div id="postcard">
             <img
               src={`${shoeCard.fields.image}`}
