@@ -75,10 +75,10 @@ A social media site where you grab data to render posts. You can also give data 
 | ------- | -------------------------------------------------- | ---------- |
 | June 28 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
 | June 29 | Project Approval                                   | Complete   |
-| June 30 | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| June 30 | Pseudocode / actual code                           | Incomplete |
-| July 1  | Initial Clickable Model                            | Incomplete |
-| July 2  | MVP                                                | Incomplete |
+| June 30 | Core Application Structure (HTML, CSS, etc.)       | Complete   |
+| June 30 | Pseudocode / actual code                           | Complete   |
+| July 1  | Initial Clickable Model                            | Complete   |
+| July 2  | MVP                                                | Complete   |
 | July 7  | Presentations                                      | Incomplete |
 
 ## Timeframes
@@ -86,12 +86,12 @@ A social media site where you grab data to render posts. You can also give data 
 | Component        | Priority | Estimated Time | Time Invested |
 | ---------------- | :------: | :------------: | :-----------: |
 | Adding Form      |    H     |      1hrs      |     2hrs      |
-| Working with API |    H     |      3hrs      |  :---------:  |
-| Pseudocode       |    H     |      1hrs      |  :---------:  |
-| Render Results   |    H     |      3hrs      |  :---------:  |
-| CSS for home     |    H     |      2hrs      |  :---------:  |
-| Style components |    H     |      2hrs      |  :---------:  |
-| Media Query's    |    H     |      2hrs      |  :---------:  |
-| Research         |    H     |      3hrs      |  :---------:  |
-| Debugging        |    H     |      3hrs      |  :---------:  |
-| Total            |    H     |     20hrs      |  :---------:  |
+| Working with API |    H     |      3hrs      |     3hrs      |
+| Pseudocode       |    H     |      1hrs      |     1hrs      |
+| Render Results   |    H     |      3hrs      |     2hrs      |
+| CSS for home     |    H     |      2hrs      |     3hrs      |
+| Style components |    H     |      2hrs      |     3hrs      |
+| Media Query's    |    H     |      2hrs      |     2hrs      |
+| Research         |    H     |      3hrs      |     2hrs      |
+| Debugging        |    H     |      3hrs      |     3hrs      |
+| Total            |    H     |     20hrs      |     20hrs     |
