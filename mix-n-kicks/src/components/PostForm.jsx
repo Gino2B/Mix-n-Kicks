@@ -21,6 +21,7 @@ function Post(props) {
       colorway,
       size,
       description,
+      likes: 0,
     };
     await axios.post(`${baseURL}/shoes`, { fields: newShoe }, config);
     props.setToggleFetch((toggleFetch) => !toggleFetch);
